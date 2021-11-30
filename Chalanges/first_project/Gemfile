@@ -1,11 +1,10 @@
-### 'gem install bundler' (para fazer um bundle, precisa ser instalado a "gem de bundler" antes)
+### 'gem install bundler' (para fazer um bundle, precisa ser instalado a "gem de bundler" antes na máquina)
 
 source 'https://rubygems.org'
- 
+gem 'cpf_cnpj' 
 gem 'os'
-
 # Na primeira linha é definido onde o bundle deve procurar pelas gems.
 # Depois é listado as dependências do projeto.
 
-# Pós isso é só cchamar o comando: bundlebl
+# Pós isso é só cchamar o comando: bundle
 # Assim, qualquer pessoa envolvida no projeto pode facilmente instalar suas dependências.
