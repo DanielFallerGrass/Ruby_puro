@@ -1,16 +1,16 @@
 class Instrumento
     def escrever
-        puts 'Escrevendo'
+        puts 'Escrevendo...'
     end
 end
 class Lapis < Instrumento
     def escrever
-        puts 'Escrevendo à Lápis'
+        puts 'Escrevendo à Lápis!'
     end
 end
 class Caneta < Instrumento
     def escrever
-        puts 'Escrevendo à Caneta'
+        puts 'Escrevendo à Caneta!'
     end
 end
 

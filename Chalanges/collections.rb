@@ -4,7 +4,7 @@
 array = []
 
 3.times do
-    p 'Digite um número: '
+    p 'Digite um número:'
     array.push(gets.chomp.to_i)
 end
 

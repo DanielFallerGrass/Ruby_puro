@@ -32,7 +32,7 @@ loop do
     when 0
         break
     else 
-        result = 'Opção inválida'
+        result = 'Opção inválida!'
     end
     # Comando que limpa o console
     system "clear"
