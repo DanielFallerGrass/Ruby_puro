@@ -32,5 +32,6 @@ end
 
 esportistas = [JogadorDeFutebol.new, Maratonista.new]
 esportistas.each do |esportista|
+    esportista.competir
     esportista.correr
 end
