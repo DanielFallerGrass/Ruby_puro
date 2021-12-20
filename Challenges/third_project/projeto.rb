@@ -7,14 +7,6 @@ Esta lambda deverá ser salva dentro de uma variável que será passada como arg
 Dentro deste método você chamará a lambda duas vezes, passando como parâmetro em cada uma delas um nome diferente.
 
 
-capitalize_name = -> (nomes) {nomes.each {|name | puts name.capitalize}}
-
-nomes = ["daniel", "raquel"]
-
-capitalize_name.call(nomes)
-
-=end
-
 def capitalize_name(texto)
   first_name = "daniel"
   second_name = "raquel"
@@ -25,3 +17,13 @@ end
 texto = lambda { |name |puts name.capitalize}
 
 capitalize_name(texto)
+=end
+
+def capitalize_name(lambda_capitalize)
+  lambda_capitalize.call('daniel')
+  lambda_capitalize.call('raquel')
+end
+
+lambda_capitalize = ->(name) { puts name.capitalize }
+
+capitalize_name(lambda_capitalize)
