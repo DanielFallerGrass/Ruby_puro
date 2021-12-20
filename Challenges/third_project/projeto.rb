@@ -12,12 +12,16 @@ capitalize_name = -> (nomes) {nomes.each {|name | puts name.capitalize}}
 nomes = ["daniel", "raquel"]
 
 capitalize_name.call(nomes)
+
 =end
 
-texto = -> {puts texto.capitalize}
-
-def capitalize_name
-    nomes =
-  
+def capitalize_name(texto)
+  first_name = "daniel"
+  second_name = "raquel"
+  texto.call(first_name)
+  texto.call(second_name)
 end
 
+texto = lambda { |name |puts name.capitalize}
+
+capitalize_name(texto)
