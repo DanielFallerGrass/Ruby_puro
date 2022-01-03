@@ -3,10 +3,8 @@
       ### 3 MANEIRAS DE CRIAR REGEX ###
 
 #1 Utilizando o formato /…/
-
-ex:
 /expressao/
-Geralmente a mais utilizada.
+#Geralmente a mais utilizada.
 
 
 #2  Através do formato %r{…}
@@ -83,3 +81,72 @@ match_data.post_match
 "BBB AAAA".match(/A{3,}/)
 #A vírgula em {3, } informa que a repetição pode ocorrer 3 ou mais vezes
 #Conclui-se que a Expressão Regular é uma ferramenta muito poderosa, capaz de identificar qualquer padrão em uma string. Caso se interesse pelo tema, recomendo fortemente que leia esta documentação.
+
+      ### MATCH ###
+#Math é um módulo nativo para funções matemáticas.
+
+#1- Sabendo a raiz quadrada de 64
+Math.sqrt(64)
+
+#2- Verificando o logaritmo de 10000 na base 10
+Math.log10(10000)
+
+#3- O logaritmo de 16 na base 2
+Math.log2(16)
+
+#4- Calculando o cosseno para o ângulo de 30º
+#Primeiro transforme o ângulo em um valor radiano
+radian = 30 * (Math::PI / 180)
+
+#Depois utilize o método cos
+Math.cos(radian)
+
+#O módulo Math também fornece o valor de duas constantes bastante utilizadas:
+#E e PI
+
+#5- Para consultar o valor da constante E execute
+Math::E
+
+#6- Consulte o valor da constante PI com a instrução
+Math::PI
+
+
+      ### TIME ###
+#O Ruby conta com uma classe chamada Time para representar datas e horas.
+
+#A seguir você verá como é natural utilizar alguns métodos dessa classe para obter informações do tempo.
+
+#Trabalhando com times
+#1- Para imprimir o horário atual execute
+time = Time.now
+puts time
+
+#2- Para o ano use o método year
+puts time.year
+
+#3- Imprimindo o mês do ano com o método month
+puts time.month
+
+#4- Para saber o dia do mês utilize o método day
+puts time.day
+
+#5- O método strftime permite a formatação de uma data em uma forma específica. Essa formatação é feita por diretivas que começam com o símbolo de %.
+time.strftime('%d/%m/%y')
+
+#Significado das diretivas
+#%d -> Dia do mês
+#%m -> Mês do ano
+#%y -> Ano
+
+#6- Verificando se o dia da semana é sábado
+puts time.saturday?
+
+#Você também pode comparar duas datas.
+#7- Crie um novo objeto com o horário atual
+time2 = Time.now
+
+#8- Ao comparar as datas de forma completa o resultado será false
+time == time2 # => false
+
+#9- Comparando o ano das duas datas, o resultado será true
+time.year == time2.year # => true
