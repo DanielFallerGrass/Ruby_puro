@@ -15,10 +15,13 @@ class Carro
   private
 
   def find_km(informacao)
-    informacao.match(/\d{2}[a-z]{2}\/[a-z]/)
+    #informacao.match(/\d{2}[a-z]{2}\/[a-z]/)
+
+    #MINHA VERSÃO COM RUBOCOP
+    #informacao.match(%r{\d{2,}km/h})
 
     #CORRECAO
-    # /\d{2,}km\/h/.match(informacao)
+    /\d{2,}km\/h/.match(informacao)
   end
 end
 
