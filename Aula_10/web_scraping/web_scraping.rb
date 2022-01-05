@@ -10,7 +10,7 @@ response = https.get('/')
 
 doc = Nokogiri::HTML(response.body)
 
-#Ex 1: extraindo 
+#Ex 1: extraindo Header 1
 h1 = doc.at('h1')
 puts h1.content
 
