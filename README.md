@@ -46,6 +46,11 @@ Instalação no ubuntu ✔
 # Dicas valiosas:
 
 ---
+* Include: Injeta os métodos para ser chamado com uma instância. (Test.new.hello)
+
+* Extend: Injeta os métodos para ser chamado com a classe. (Test.hello)
+
+---
 
 We have already seen literals: every time we type an object directly into Ruby code, we are using a literal. Literals create objects which are used in the program.
 
@@ -83,4 +88,3 @@ O `%w` Ajuda para não precisarmos escrever tudo com aspas e vígula.
 
 Bad Code:   a = ["ant", "bee", "cat", "dog", "elk"]   #saída de a => ["ant", "bee", "cat", "dog", "elk"] 
 Good Code:  a = %w[ant bee cat dog elk]               #saída de a => ["ant", "bee", "cat", "dog", "elk"] 
-
